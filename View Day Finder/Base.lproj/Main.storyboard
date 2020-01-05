@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="View_Day_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hU4-xs-FoE">
+                                <rect key="frame" x="16" y="232" width="343" height="120"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pfD-cT-5JZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="51.666666666666664" height="120"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0P-eX-elB">
+                                                <rect key="frame" x="0.0" y="0.0" width="51.666666666666664" height="30"/>
+                                                <color key="backgroundColor" red="0.8662429209756346" green="0.62888676203254212" blue="0.53842502316018193" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Month" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaD-Nn-0Qq">
+                                                <rect key="frame" x="0.0" y="33" width="51.666666666666664" height="66"/>
+                                                <color key="backgroundColor" red="0.76378530259999999" green="0.65853947400000001" blue="0.67314702270000004" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Dk-kB-E48">
+                                                <rect key="frame" x="0.0" y="102" width="51.666666666666664" height="18"/>
+                                                <color key="backgroundColor" red="0.8662429209756346" green="0.62888676203254212" blue="0.53842502316018193" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="X0P-eX-elB" secondAttribute="bottom" constant="90" id="QuL-3E-eRD"/>
+                                            <constraint firstAttribute="width" constant="51.5" id="SjG-nw-QgX"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="ZEB-Es-wLU">
+                                        <rect key="frame" x="61.666666666666657" y="0.0" width="281.33333333333337" height="120"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pass data here from 01 to 31" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E0i-Bw-39h">
+                                                <rect key="frame" x="0.0" y="0.0" width="281.33333333333331" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pass month here from 01 to 12" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NKg-EX-Wfz">
+                                                <rect key="frame" x="0.0" y="43" width="281.33333333333331" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pass year here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Egz-fF-S4z">
+                                                <rect key="frame" x="0.0" y="86" width="281.33333333333331" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Dgi-62-wZh"/>
+                                    <constraint firstAttribute="width" constant="343" id="Sg4-L3-84s"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekday finder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSu-R0-Ee7">
+                                <rect key="frame" x="73.666666666666671" y="67" width="227.66666666666663" height="65"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0n8-8o-Q5Y">
+                                <rect key="frame" x="138.66666666666666" y="536" width="98" height="42"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.29957726883561642" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Cvz-tg-Nwj"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98" id="am7-CX-SZR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <state key="normal" title="FIND DAY">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="findWekkDay" destination="BYZ-38-t0r" eventType="touchUpInside" id="rT3-It-hpo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here you will see the                    day of the week" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vs-qI-ZKQ">
+                                <rect key="frame" x="-11.666666666666657" y="402" width="398.33333333333326" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="NH0-XY-CiI"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="kuc-3g-RYI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="19"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91764933448578678" green="0.77119591403260623" blue="0.79711732801971591" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8vs-qI-ZKQ" firstAttribute="centerX" secondItem="hU4-xs-FoE" secondAttribute="centerX" id="2Vf-Ya-06t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0n8-8o-Q5Y" secondAttribute="bottom" constant="200" id="7sn-os-WZt"/>
+                            <constraint firstItem="8vs-qI-ZKQ" firstAttribute="top" secondItem="hU4-xs-FoE" secondAttribute="bottom" constant="50" id="FeC-Jx-LSg"/>
+                            <constraint firstItem="YSu-R0-Ee7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GqF-0h-cQi"/>
+                            <constraint firstItem="0n8-8o-Q5Y" firstAttribute="top" secondItem="8vs-qI-ZKQ" secondAttribute="bottom" constant="60" id="KH6-ci-VOj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hU4-xs-FoE" secondAttribute="trailing" constant="16" id="Yaj-nB-9Hg"/>
+                            <constraint firstItem="YSu-R0-Ee7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="hNA-vs-HkX"/>
+                            <constraint firstItem="hU4-xs-FoE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hQa-Nd-evx"/>
+                            <constraint firstItem="hU4-xs-FoE" firstAttribute="top" secondItem="YSu-R0-Ee7" secondAttribute="bottom" constant="100" id="xvG-PW-i9K"/>
+                            <constraint firstItem="8vs-qI-ZKQ" firstAttribute="centerX" secondItem="0n8-8o-Q5Y" secondAttribute="centerX" id="ySj-Y1-eHf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dateTF" destination="E0i-Bw-39h" id="znZ-la-uNF"/>
+                        <outlet property="monthTF" destination="NKg-EX-Wfz" id="sQa-L1-9Zo"/>
+                        <outlet property="resultLabel" destination="8vs-qI-ZKQ" id="M4b-iU-gRb"/>
+                        <outlet property="yearTF" destination="Egz-fF-S4z" id="zof-rO-Fr6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="223.19999999999999" y="113.79310344827587"/>
+        </scene>
+    </scenes>
+</document>
